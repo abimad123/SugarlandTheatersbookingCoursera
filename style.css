@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #e0dfeb;
+  color: #050000;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+header {
+    width: 100%;
+    background-color: #444451;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+.movie-container {
+  margin: 20px 0;
+}
+
+.movie-container select {
+  background-color: #999494;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px 15px;
+}
+
+.container { perspective: 1000px; margin-bottom: 30px; }
+
+.seat {
+  background-color: #444451;
+  height: 26px;
+  width: 32px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+box-shadow: 0 4px 6px rgba(163, 0, 0, 0.2);
+}
+
+.seat.selected { background-color: green; }
+
+.seat.sold { background-color: #fff; color: #444; }
+
+.seat:not(.sold):hover { cursor: pointer; transform: scale(1.1); }
+
+.showcase { display: flex; justify-content: space-between; margin: 15px 0; }
+
+.row { display: flex; }
+
+.screen {
+  background-color: #fafafa;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.862);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+font-weight: bold;
+color: #444;
+text-transform: uppercase;
+content: "All Eyes Here";
+  height: 120px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-48deg);
+}
+
+p.text { margin: 5px 0; }
+
+p.text span { color: rgb(245, 12, 12); }

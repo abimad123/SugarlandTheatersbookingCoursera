@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title> Sugarland Theaters Movie Seat Booking</title>
+  </head>
+  <body>
+    <header>
+        <h1> Sugarland Theaters</h1>
+        <nav>
+            <a href="#movies" onclick="location.reload()">Movies</a>
+            <a href="#seats" onclick="location.reload()">Seats</a>
+            <a href="#contact" onclick="location.reload()">Contact</a>
+        </nav>
+    </header>
+    <div class="movie-container">
+      <label> Select a movie:</label>
+    <select id="movie">
+        <option value="250">Drishyam 2 (RS.250)</option>
+      <option value="200">KGF: Chapter 2 (RS.200)</option>
+      <option value="230">Vikram (RS.230)</option>
+      
+    </select>
+    </div>
+
+    <div class="container">
+      <div class="screen">All Eyes Here</div>
+      <br><br>
+      <div class="row" style="justify-content: center;">
+        <div class="seat">A1</div>
+        <div class="seat">A2</div>
+        <div class="seat" style="background-color: #888; pointer-events: none;">STAIR</div>
+        <div class="seat">A3</div>
+        <div class="seat">A4</div>
+        </div>
+        <div class="row" style="justify-content: center;">
+        <div class="seat">B1</div>
+        <div class="seat">B2</div>
+        <div class="seat" style="background-color: #888; pointer-events: none;">STAIR</div>
+        <div class="seat">B3</div>
+        <div class="seat">B4</div>
+    </div>
+    <div class="row" style="justify-content: center;">
+        <div class="seat">D1</div>
+        <div class="seat">D2</div>
+        <div class="seat">D3</div>
+        <div class="seat">D4</div>
+        <div class="seat" style="background-color: #888; pointer-events: none;">STAIR</div>
+        <div class="seat">D5</div>
+        <div class="seat">D6</div>
+        <div class="seat">D7</div>
+        <div class="seat">D8</div>
+    </div>
+    <div class="row">
+        <div class="seat">E1</div>
+        <div class="seat">E2</div>
+        <div class="seat">E3</div>
+        <div class="seat">D4</div>
+        <div class="seat" style="background-color: #888; pointer-events: none;">STAIR</div>
+        <div class="seat">E5</div>
+        <div class="seat">E6</div>
+        <div class="seat">E7</div>
+        <div class="seat">E8</div>
+    </div>
+    <div class="row">
+        <div class="seat">F1</div>
+        <div class="seat">F2</div>
+        <div class="seat">F3</div>
+        <div class="seat">F4</div>
+        <div class="seat" style="background-color: #888; pointer-events: none;">STAIR</div>
+        <div class="seat">F5</div>
+        <div class="seat">F6</div>
+        <div class="seat">F7</div>
+        <div class="seat">F8</div>
+    </div>
+    <div class="row">
+        <div class="seat">G1</div>
+        <div class="seat">G2</div>
+        <div class="seat">G3</div>
+        <div class="seat">G4</div>
+        <div class="seat" style="background-color: #888; pointer-events: none;">STAIR</div>
+        <div class="seat">G5</div>
+        <div class="seat">G6</div>
+        <div class="seat">G7</div>
+        <div class="seat">G8</div>
+    </div>
+    <div class="row">
+        <br>
+        
+        ______________________________________________________
+    </div>
+
+    <p class="text">You have selected <span id="count">0</span> seat(s) for a price of RS.<span id="total">0</span></p>
+    <p class="text">Selected Seats: <span id="selected-seats">None</span></p>
+    <div class="row">
+    
+        ____________________________________________________
+    </div>
+    <center><button id="confirm-btn" style="padding: 10px 20px; font-size: 16px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: 20px;">Confirm Ticket</button>
+
+        <script src="script.js"></script>
+
+    </div>
+  </body>
+</html>
